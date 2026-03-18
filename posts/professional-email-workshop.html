@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>30 Minutes with Junior | AcadMentor</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- PWA Setup -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0d6efd">
+
+<!-- iOS support -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AcadMentor">
+<link rel="apple-touch-icon" href="logo.png">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__text">
+          <span class="brand__name">AcadMentor Research Consult</span>
+          <span class="brand__tag">Guiding Your Research Success</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="postHeader">
+      <div class="container">
+        <a class="backLink" href="../events.html">← Back to Events & Offers</a>
+        <div class="postCard__meta">
+          <span class="postTag postTag--free">Free</span>
+        </div>
+        <h1>30 Minutes with Junior: How to Create a Professional Email</h1>
+        <p class="eventsIntro">A practical Zoom session to help students communicate professionally and confidently.</p>
+      </div>
+    </section>
+
+    <section class="postBody">
+      <div class="container">
+        <div class="postPanel">
+          <p><strong>Format:</strong> Zoom session</p>
+          <p><strong>Audience:</strong> Students and early researchers</p>
+          <p><strong>Topic:</strong> How to write a professional email to lecturers, supervisors, scholarship offices, and institutions</p>
+          <p><strong>Fee:</strong> Free</p>
+          <p><strong>Date:</strong> To be announced</p>
+          <p><strong>What participants will learn:</strong></p>
+          <ul>
+            <li>Email structure and subject lines</li>
+            <li>Professional greetings and tone</li>
+            <li>Common mistakes students should avoid</li>
+            <li>Examples of strong academic emails</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(() => console.log("Service Worker Registered"))
+        .catch(err => console.log("SW failed:", err));
+    });
+  }
+</script>
+</body>
+</html>

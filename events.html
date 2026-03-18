@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events & Offers | AcadMentor Research Consult</title>
+  <link rel="stylesheet" href="./styles.css" />
+<!-- PWA Setup -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0d6efd">
+
+<!-- iOS support -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AcadMentor">
+<link rel="apple-touch-icon" href="logo.png">
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="AcadMentor Home">
+        <span class="brand__text">
+          <span class="brand__name">AcadMentor Research Consult</span>
+          <span class="brand__tag">Guiding Your Academic Success</span>
+        </span>
+      </a>
+
+      <div class="header__right">
+        <nav class="nav nav--open" id="nav">
+          <a href="index.html#services">Services</a>
+          <a href="index.html#why">Why Choose Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="index.html#contact">Contact</a>
+          <!-- Back button -->
+          <a href="index.html" id="navBackBtn" class="navBackBtn">← Back</a>
+        </nav>
+
+        <button class="navToggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="eventsHero">
+      <div class="container">
+        <h1>Events & Offers</h1>
+        <p class="eventsIntro">
+          Explore upcoming workshops, training sessions, discounts, and free support opportunities offered by AcadMentor.
+        </p>
+
+        <!-- <div class="postGrid">
+          <article class="postCard">
+            <div class="postCard__meta">
+              <span class="postTag postTag--free">Free</span>
+            </div>
+            <h3>30 Minutes with Junior: How to Create a Professional Email</h3>
+            <p>A short Zoom session for students on writing clear, professional emails to lecturers, supervisors, and institutions.</p>
+            <div class="postCard__foot">
+              <span class="postDate">8th March 2026</span>
+              <a class="postLink" href="./posts/professional-email-workshop.html">Open Post</a>
+            </div> -->
+          </article>
+
+          <!-- <article class="postCard">
+            <div class="postCard__meta">
+              <span class="postTag postTag--paid">Paid</span>
+              <span class="postTag postTag--discount">Discount</span>
+            </div>
+            <h3>Data Analysis Bootcamp Offer</h3>
+            <p>Special student pricing for a guided data analysis training session covering SPSS, R, and interpretation of results.</p>
+            <div class="postCard__foot">
+              <span class="postDate">March 2026</span>
+              <a class="postLink" href="./posts/stata-training-discount/">Open Post</a>
+            </div>
+          </article>
+
+          <article class="postCard">
+            <div class="postCard__meta">
+              <span class="postTag postTag--free">Free</span>
+            </div>
+            <h3>Free Consultation Week</h3>
+            <p>Selected students will receive limited free guidance on topic refinement, proposal direction, and study planning.</p>
+            <div class="postCard__foot">
+              <span class="postDate">March 2026</span>
+              <a class="postLink" href="./posts/free-consultation-week/">Open Post</a>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+
+  <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(() => console.log("Service Worker Registered"))
+        .catch(err => console.log("SW failed:", err));
+    });
+  }
+</script>
+</body>
+</html>

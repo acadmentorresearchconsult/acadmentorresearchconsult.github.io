@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ | AcadMentor Research Consult</title>
+<link rel="stylesheet" href="styles.css">
+<!-- PWA Setup -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0d6efd">
+
+<!-- iOS support -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AcadMentor">
+<link rel="apple-touch-icon" href="logo.png">
+</head>
+
+<body>
+
+<header class="header">
+<div class="container header__inner">
+<a class="brand" href="index.html">
+<span class="brand__name">AcadMentor Research Consult</span>
+</a>
+
+<nav class="nav">
+<a href="index.html#services">Services</a>
+<a href="index.html#why">Why Choose Us</a>
+<a href="events.html">Events & Offers</a>
+<a href="index.html#contact">Contact</a>
+<!-- Back button -->
+<a href="index.html" id="navBackBtn" class="navBackBtn">← Back</a>
+</nav>
+</div>
+</header>
+
+<section class="section">
+<div class="container">
+
+<h1>Frequently Asked Questions</h1>
+<p class="section__sub">
+Answers to commonly asked questions about AcadMentor services, mentorship sessions, and research support.
+</p>
+
+<div class="faq">
+
+<details>
+<summary>What services does AcadMentor provide?</summary>
+<p>
+AcadMentor provides mentorship-based support for students working on assignments, research projects, theses, and dissertations. 
+Services include research design support, literature review guidance, data analysis mentoring, academic writing improvement, bioinformatics support, and viva preparation.
+</p>
+</details>
+
+<details>
+<summary>Who can benefit from AcadMentor services?</summary>
+<p>
+Our services are designed for undergraduate, MSc, MPhil and PhD students who need guidance with assignments, research methods, data analysis, or academic writing.
+</p>
+</details>
+
+<details>
+<summary>What fields do you support?</summary>
+<p>
+AcadMentor primarily supports students in STEM and health sciences fields including medicine, microbiology, public health, bioinformatics, and related disciplines. We also provide general research design, writing mentorship and data analysis services and assignment support that can benefit students in other fields including the humanities and social sciences.
+</p>
+</details>
+
+<details>
+<summary>How do mentorship sessions work?</summary>
+<p>
+Mentorship sessions are tailored to each student's specific needs. Conducted virtually, these one-on-one sessions review your work, clarify methods or analysis, and explain the guidance provided. Each session focuses on helping you understand the solutions discussed and gives practical steps to strengthen your research and continue your work independently.
+</p>
+</details>
+
+<details>
+<summary>How long does a session last?</summary>
+<p>
+Session duration varies depending on the service requested, but most mentorship sessions last between 30 minutes and 1 hour.
+</p>
+</details>
+
+<details>
+<summary>Do you offer free consultations?</summary>
+<p>
+Yes. Occasionally AcadMentor offers free consultations or mentorship sessions during special events or promotional periods. These opportunities are announced on the Events & Offers page.
+</p>
+</details>
+
+<details>
+<summary>How do I book a session?</summary>
+<p>
+You can book a session by sending a message through the contact form on the website or by contacting us via email. Provide your academic level, topic, and the type of help you need.
+</p>
+</details>
+
+<details>
+<summary>How is Acadata Insight Consult related to AcadMentor?</summary>
+<p>
+Acadata Insight Consult is a subsidiary of AcadMentor that focuses specifically on data analysis services. While AcadMentor provides comprehensive research mentorship and academic guidance, Acadata Insight Consult offers specialized support for complex data analysis, helping researchers process, analyze, and interpret their data effectively.
+</p>
+</details>
+
+<details>
+<summary>What software tools do you support for data analysis?</summary>
+<p>
+We provide mentorship for analysis using software such as SPSS, R, Python, and Stata depending on the needs of the project.
+</p>
+</details>
+
+<details>
+<summary>Do you help with bioinformatics projects?</summary>
+<p>
+Yes. AcadMentor provides guidance on bioinformatics workflows including sequence analysis, variant detection, phylogenetics, and other computational biology approaches.
+</p>
+</details>
+
+<details>
+<summary>Can you help me choose a research topic?</summary>
+<p>
+Yes. Topic refinement and feasibility assessment are part of our research design support services.
+</p>
+</details>
+
+<details>
+<summary>Do you help with literature reviews?</summary>
+<p>
+Yes. We guide students in building literature matrices, organizing themes, identifying research gaps, and structuring strong review sections.
+</p>
+</details>
+
+<details>
+<summary>Do you help with thesis defense preparation?</summary>
+<p>
+Yes. We provide mock defense sessions, help refine presentation slides, and prepare students for common examiner questions.
+</p>
+</details>
+
+<details>
+<summary>How much do your services cost?</summary>
+<p>
+Pricing varies depending on the type and scope of support required. Details are provided after discussing your needs. Occasionally discounts and special offers are announced on the Events & Offers page.
+</p>
+</details>
+
+<details>
+<summary>Do you work with students outside Africa?</summary>
+<p>
+Yes. AcadMentor operates virtually and can support students from different regions around the world.
+</p>
+</details>
+
+</div>
+
+</div>
+</section>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(() => console.log("Service Worker Registered"))
+        .catch(err => console.log("SW failed:", err));
+    });
+  }
+</script>
+</body>
+</html>

@@ -496,6 +496,22 @@ img{ max-width:100%; height:auto; display:block; }
     gap:12px;
   }
 
+.contact__details,
+.contact__details a,
+.contact__card,
+.contact__card a{
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+.contact__details{
+  font-size:14px;
+  line-height:1.5;
+}
+
+.contact__details a{
+  font-size:13px;
+}
   .header__right{
     display:flex;
     align-items:center;
@@ -585,15 +601,20 @@ img{ max-width:100%; height:auto; display:block; }
   }
 
   .heroMosaic{
-    grid-template-columns:1fr;
-  }
+  grid-template-columns: repeat(2, 1fr);
+  gap:10px;
+}
 
-  .heroMosaic img:first-child,
-  .heroMosaic img:nth-child(2),
-  .heroMosaic img:nth-child(3){
-    grid-column:auto;
-    aspect-ratio:16/10;
-  }
+.heroMosaic img:first-child{
+  grid-column: 1 / -1;
+  aspect-ratio: 16/9;
+}
+
+.heroMosaic img:nth-child(2),
+.heroMosaic img:nth-child(3){
+  grid-column: auto;
+  aspect-ratio: 1 / 1;
+}
 
   .postCard__foot{
     flex-direction:column;

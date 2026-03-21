@@ -2,7 +2,7 @@
 const SETTINGS = {
   whatsappNumberInternational: "233265355732", // e.g. "233501234567"
   email: "acadmentorresearchconsult@gmail.com",
-  facebookUrl: "https://facebook.com/",     // replace with your page
+  facebookUrl: "https://web.facebook.com/acadmentorresearchconsult",     // replace with your page
   instagramUrl: "https://www.instagram.com/acadmentorresearchconsult/",   // replace with your page
   peopleServed: 50
 };

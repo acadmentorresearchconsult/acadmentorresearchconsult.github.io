@@ -1,4 +1,4 @@
-const CACHE_NAME = "acadmentor-cache-v2";
+const CACHE_NAME = "acadmentor-cache-v3";
 const APP_SHELL = [
   "/",
   "/index.html",
@@ -7,7 +7,9 @@ const APP_SHELL = [
   "/styles.css",
   "/script.js",
   "/manifest.json",
-  "/logo.png"
+  "/logo.png",
+  "/ebooks.html",
+
 ];
 
 self.addEventListener("install", (event) => {

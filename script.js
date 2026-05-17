@@ -179,7 +179,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!popup) return;
 
-  // REMOVE THIS AFTER TESTING
   localStorage.removeItem("popupShown");
 
   if (!localStorage.getItem("popupShown")) {
@@ -196,19 +195,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// eBook category filtering
+const ebookFilters = document.querySelectorAll(".ebookFilter");
+const ebookCategoryBlocks = document.querySelectorAll(".ebookCategoryBlock");
 
+if (ebookFilters.length && ebookCategoryBlocks.length) {
+  ebookFilters.forEach((button) => {
+    button.addEventListener("click", () => {
+      const selectedCategory = button.dataset.filter;
 
-// Close popup if subscription was successful
-window.addEventListener("load", () => {
-  const params = new URLSearchParams(window.location.search);
+      ebookFilters.forEach((btn) => btn.classList.remove("is-active"));
+      button.classList.add("is-active");
 
-  if (params.get("subscribed") === "true") {
-    const popup = document.getElementById("emailPopup");
-    if (popup) {
-      popup.classList.add("hidden");
-    }
+      ebookCategoryBlocks.forEach((block) => {
+        const blockCategory = block.dataset.categoryBlock;
 
-    // Optional: remove query from URL
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
-});
+        if (selectedCategory === "all" || selectedCategory === blockCategory) {
+          block.classList.remove("is-hidden");
+        } else {
+          block.classList.add("is-hidden");
+        }
+      });
+    });
+  });
+}
